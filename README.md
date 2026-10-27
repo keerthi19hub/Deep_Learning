@@ -1,103 +1,51 @@
-# Deep Learning Laboratory & Neural Network Implementations
+# 🧠 Deep Learning Laboratory
 
-> **Practical implementations of Convolutional Neural Networks (CNNs), forward propagation from scratch, optimization algorithms (Adam, RMSprop, SGD), gradient descent, and regularization techniques.**
+> **Deep Learning coursework laboratory covering CNN classification, forward propagation, gradient-based optimisers, and loss function analysis.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
-[![Deep Learning](https://img.shields.io/badge/Framework-TensorFlow%20%7C%20PyTorch-orange)](https://tensorflow.org)
-[![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-F37626?logo=jupyter&logoColor=white)](https://jupyter.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)](https://tensorflow.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)](https://jupyter.org)
 
 ---
 
-## 1. Laboratory Overview
+## Laboratory Contents
 
-The **Deep Learning Laboratory** provides a systematic, code-first exploration of fundamental and intermediate deep learning concepts. Rather than treating neural networks as black boxes, this repository demonstrates:
-1. Low-level mathematical implementations (matrix forward propagation, manual gradient descent).
-2. Convolutional Neural Networks for computer vision (digit classification, feature map pooling).
-3. Comparative optimization analysis (benchmarking SGD, Momentum, RMSprop, and Adam).
-4. Generalization strategies (mitigating overfitting via Dropout and weight decay).
-5. Loss function formulations and AI ethics analysis.
-
----
-
-## 2. Projects & Implementations
-
-| Project File | Focus Area | Key Architectural & Algorithmic Concepts |
-| :--- | :--- | :--- |
-| `Project11_Handwritten_Digit_Classification_CNN.ipynb` | Computer Vision (CNN) | Convolutional layers, Max-Pooling, Flatten, Softmax classification on MNIST |
-| `Project12_Understanding_Convolution_and_Pooling.ipynb` | Feature Extraction | Kernel filters, feature map transformations, receptive fields, stride/padding |
-| `Project6_Neural_Network_Forward_Propagation.ipynb` | Neural Foundations | Matrix weight multiplications, bias vectors, ReLU/Sigmoid activation functions |
-| `Project_8_Gradient_Descent_Implementation_.ipynb` | Optimization Theory | Batch vs Stochastic Gradient Descent (SGD), learning rate sensitivity, loss curves |
-| `Project9_Optimizer_Comparison_Using_a_Neural_Network.ipynb` | Optimizer Benchmark | Empirical comparison of SGD, Momentum, RMSprop, and Adam convergence speeds |
-| `Project_10_Overfitting_Underfitting.ipynb` | Model Regularization | Bias-variance tradeoff, Dropout layers, L2 kernel regularization, Early Stopping |
-| `Project_5_DL.ipynb` | Multilayer Perceptrons | Multi-layer feedforward architecture design, backpropagation, and training loops |
-| `Assignment_7__Loss_Function_Implementation.ipynb` | Loss Formulations | Mathematical implementation of MSE, Binary Cross-Entropy, Categorical Cross-Entropy |
-| `Assignment 4 _Ethical Considerations (DL).pdf` | AI Ethics & Fairness | Research report on algorithmic bias, data privacy, transparency, and accountability |
+| Experiment | Topic | Key Concepts |
+|-----------|-------|-------------|
+| **CNN Classification** | Image recognition with Convolutional Neural Networks | Conv2D · MaxPooling · Dropout · Softmax |
+| **Forward Propagation** | Manual neural network forward pass implementation | Weight matrices · Activation functions (ReLU, Sigmoid) |
+| **Optimiser Comparison** | Adam vs SGD vs RMSProp convergence analysis | Learning rate schedules · Loss curves |
+| **Loss Functions** | Cross-Entropy vs MSE for classification & regression | Gradient flow analysis |
+| **Backpropagation** | Manual gradient computation through network layers | Chain rule · Gradient descent |
+| **Regularisation** | Dropout, L1/L2 regularisation impact on overfitting | Bias-variance tradeoff |
 
 ---
 
-## 3. Technology Stack
+## Tech Stack
 
-- **Languages & Frameworks:** Python, TensorFlow / Keras, PyTorch
-- **Data & Computation:** NumPy, Pandas
-- **Visualization:** Matplotlib, Seaborn
-- **Environment:** Jupyter Notebook
+`Python` · `PyTorch` · `TensorFlow/Keras` · `NumPy` · `Matplotlib` · `Jupyter Notebook`
 
 ---
 
-## 4. Repository Structure
-
-```
-Deep_Learning/
-├── Project11_Handwritten_Digit_Classification_CNN.ipynb
-├── Project12_Understanding_Convolution_and_Pooling.ipynb
-├── Project6_Neural_Network_Forward_Propagation.ipynb
-├── Project_8_Gradient_Descent_Implementation_.ipynb
-├── Project9_Optimizer_Comparison_Using_a_Neural_Network.ipynb
-├── Project_10_Overfitting_Underfitting.ipynb
-├── Project_5_DL.ipynb
-├── Assignment_7__Loss_Function_Implementation.ipynb
-├── Assignment 4 _Ethical Considerations (DL).pdf
-├── AI_in_Our_Daily_Life 01.pptx
-└── README.md
-```
-
----
-
-## 5. Setup & Execution
+## Quickstart
 
 ```bash
-# 1. Clone repository
 git clone https://github.com/keerthi19hub/Deep_Learning.git
 cd Deep_Learning
 
-# 2. Virtual environment
-python -m venv venv
-venv\Scripts\activate  # On Windows
-source venv/bin/activate  # On Linux/macOS
-
-# 3. Dependencies
-pip install tensorflow torch numpy pandas matplotlib seaborn jupyter
-
-# 4. Launch Jupyter
+pip install torch torchvision tensorflow numpy matplotlib jupyter
 jupyter notebook
 ```
 
 ---
 
-## 6. Key Learnings & Empirical Observations
+## Author
 
-- **CNN Feature Hierarchies:** Early convolutional layers extract low-level spatial primitives (edges, gradients), while deeper layers assemble class-specific semantic patterns.
-- **Optimizer Performance:** Adaptive moment estimation (Adam) consistently achieves faster convergence and stable loss reduction across sparse and dense gradients compared to standard SGD.
-- **Regularization Impact:** Incorporating 20-30% Dropout combined with early stopping effectively suppresses training/validation divergence in multi-layer dense networks.
+**Keerthi N** — Experimental design, model implementation, hyperparameter analysis, and documentation.
 
----
-
-## 7. Author & Contribution
-
-- **Keerthi N** (*Alliance University, BCA*) — Authored all deep learning notebooks, neural network implementations, optimizer benchmarking, and technical documentation.
+*Alliance University, BCA — 2026*
 
 ---
 
-## 8. License
-
-Developed for academic coursework and portfolio demonstration at Alliance University. Released under the [MIT License](https://opensource.org/licenses/MIT).
+Released under the [MIT License](https://opensource.org/licenses/MIT).
